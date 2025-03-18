@@ -1,0 +1,175 @@
+
+a:focus{
+    text-decoration:underline;
+    /* Added an underline when in focus for better accessibiity */
+ }
+
+.skip{
+    position:absolute;
+    top:-40px;
+    left:-1000px;
+    /* position of the skip to main content is not visible when entering the page*/
+}
+
+.skip:focus{
+    top:20px;
+    left:10px;
+    /* the position of where the skip to main content link appears when pressing tab*/
+}
+
+*:focus{
+    border: 2px solid; /* solid border appears when all elements are in focus */
+ }
+
+body {
+    margin: 0px;
+    font-family: "Nunito Sans", "Montserrat"
+    /* set the default margin and specifies font choices*/
+}
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* specifies margin choices to create more spacing around the main content */
+}
+
+h1 {
+    font-size: 1.1rem;
+    color: 	#2F65A7;
+    border-bottom: 0.25rem solid #ffcb05;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3rem;
+    grid-column: -1/1;
+     /* Code modified from Wolverine Wellness to set font-size, color,spacing, and full width of the grid to style h1 heading*/
+}
+
+h2{
+    color:#131516;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    /* Code modified from Wolverine Wellness to set font-size, color,spacing, and full width of the grid to style h2 heading*/
+}
+
+.logo{
+    background-image: url("images/UMSI.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* made the logo centered and a responsive background image */
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #00274C;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* remove the navbar default list styling and added flexbox for even spacing*/
+    /* Code modified from Bro Code channel from YouTube*/
+}
+.navbar li{
+    flex:1;
+    text-align: center;
+ /* ensure that the items are evenly distributed and centered along the navigation bar */
+ /* Code modified from Bro Code channel from YouTube*/
+}
+.navbar a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    /* remove the navbar default list styling with white text and centered the items and added block display*/
+    /* Code modified from Bro Code channel from YouTube*/
+}
+.active{
+    background-color: #05529a;
+    /* change background color of navbar item when active*/
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #00274C;
+    color: #FFFFFF;
+    /* make three column grid that is centered with both background and text colors*/
+}
+
+.footer-links{
+    text-decoration: none; /* erase the hyperlink underline */
+    padding: 0;
+    margin:0;
+    color:#FFCB05; /* change text color yellow */
+}
+.footer-three-list{
+    list-style: none; /* removed the default footer three list styling */
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    /* make a two column grid that is centered with spacing*/
+}
+.backpack-image,.resources-image{
+    width:100%;
+    height:auto;
+     /* make images full width while maintaining automatic height*/
+}
+.intro-one,.intro-two{
+    border:solid 2px #2F65A7;
+    /* make intro sections a solid blue border*/
+}
+
+.studying-image,.quiet-image,.low-image, .medium-image, .high-image{
+    width: 100%;
+    height:auto;
+    /* make images full width while maintaining automatic height*/
+}
+.campus-map{
+    grid-column:-1/1; /* span all columns */
+}
+.study-intro,.quiet-noise,.low-noise,.medium-noise,.high-noise,.campus-map{
+   border:solid 2px #CFC096;
+    /* make study space sections a solid tan border*/
+}
+
+.wellness-image, .therapydog-image, .sexual-image,.collegiate-image{
+    width:100%;
+    height:auto;
+    /* make images full width while maintaining automatic height*/
+}
+.wolvwell-intro,.wellness-coaching, .pawws-and-relax,.sexual-health-services, .collegiate-recovery-program{
+    border:solid 2px #702082;
+ /* make wolverine wellness sections a solid purple border*/
+}
+
+.services-image,.maize-image{
+    width:100%;
+    height:auto;
+    /* make images full width while maintaining automatic height*/
+}
+.maize-mission, .maize-location,.maize-resources{
+    border: solid 2px #75988d;
+     /* make intro sections a solid green border*/
+}
+
+.intro-two-list,.wolvwell-intro-list,.study-intro-list,.maize-resources-list,.maize-location-list{
+    list-style: none; /* removed the default list styling across these lists */
+}
+
+iframe{
+    width: 100%;
+    border-width: 0px;
+    /* make iframe videos full width and remove the default border*/
+}
