@@ -235,9 +235,12 @@ iframe{
       }
    /* Ensure .grid-container is using flexbox and allows wrapping */
    .flex-container {
-    flex-direction: row;        /* Arrange in a row */
-    justify-content: space-around; /* Distribute items evenly */
-   }
+    display: flex;
+    flex-wrap: wrap;            /* Allow items to wrap */
+    justify-content: space-between; /* Space items evenly */
+    gap: 20px;                  /* Space between items */
+    padding: 20px;              /* Padding around the container */
+}
 
    .card {
     flex: 1 1 45%;             /* Cards take up 45% of the container width */
@@ -299,5 +302,10 @@ iframe{
         column-gap: 3rem; /* More space between columns */
         padding: 30px; /* Adjusted padding for a more balanced desktop view */
         text-align: left; /* Align text to the left in columns */
+    }
+    iframe{
+        width: 100%;
+        border-width: 0px;
+        /* make iframe videos full width and remove the default border*/
     }
 }
