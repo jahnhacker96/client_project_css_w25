@@ -17,28 +17,26 @@
                 <li class="active"><a href = "home.html">Home</a></li>
                 <li><a href = "studyspaces.html">StudySpaces</a></li>
                 <li><a href = "wolverinewellness.html"> WolverineWellness</a></li>
-                <li><a href = "maizeandblue.html"> MaizeandBlueCupboard</a></li>
+                <li><a href = "maizeandblue.html"> MaizeandBlue</a></li>
             </ul>
         </nav>
     </header>
     <main class="grid-container" id="main">
         <h1 class="page-title">Student Success Portal</h1>
+        <div class="card">
         <section class="intro-one">
-            <div>
             <h2>Welcome to the Student Resources Portal</h2>
             <p> Your one-stop hub for navigating life at the University of Michigan's School of Information! Discover tools, tips, and resources designed to support your academic success, well-being, and connection to the vibrant UofM community.</p>
-            </div>
         </section>
         <section class="intro-one">
-            <div>
             <figure>
                 <img src="images/Backpack.png" alt="A student wears a UMSI backpack in the spring on the Diag" class="backpack-image">
                 <figcaption>UMSI student walking to class!</figcaption>
             </figure>
         </section>
-            </div>
+        </div>
+            <div class="card">
             <section class="intro-two">
-            <div>
             <h3>What You’ll Find Here:</h3>
             <ul class="intro-two-list">
                 <li><strong>Academic Resource Guide:</strong> Guides to the best study spots</li>
@@ -46,7 +44,6 @@
                 <li><strong>Basic Needs:</strong> Find food assistance programs, housing support, and financial resources</li>
             </ul>
         <p>Explore, connect, and thrive—because your journey at Michigan matters.</p>
-        </div>
         </section>
         <section class="intro-two">
             <figure>
@@ -54,12 +51,13 @@
                         <figcaption>A student reads a textbook between shelves in Shapiro Undergraduate Library.</figcaption>
                 </figure>
         </section>
+        </div>
         <!-- Content taken & modified from ChatGPT with the prompt, "write a good smooth home page that introduces the resources for University of Michigan grad student" (2025). ChatGPT (March 23rd, 2023 version) [Large language model]. -->
     </main>
     <footer class="footer-container">
         <div class="footer-one">
         <p>University of Michigan School of Information</p>
-        <p>&copy Copyright 2025 Regents of the University of Michigan</p>
+        <p>© Copyrights <span id="year"></span> Regents of the University of Michigan. All rights reserved.</p>
         </div>
         <div class="footer-two">
         <p> 105 S State Street</p>
@@ -72,5 +70,8 @@
         </ul>
        </div>
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
 </body>
 </html>

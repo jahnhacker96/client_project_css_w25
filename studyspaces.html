@@ -23,32 +23,29 @@
       </header>
       <main class="grid-container" id="main">
         <h1 class="page-title">Find Your Perfect Study Spot at U-M</h1>
-          <section class="study-intro">
-            <div>
+        <div class="card">
+        <section class="study-intro">
               <h2>Discover the Best Study Spaces on Campus</h2>
               <p> Where productivity meets comfort—your ideal study space awaits!</p>
               <p>The University of Michigan’s campus offers countless study spaces designed to meet the unique needs of graduate students. Whether you prefer quiet solitude, a collaborative workspace, or an energizing atmosphere, there’s a spot just for you.</p>
               <p>This guide highlights the best places to study on campus based on noise level, helping you find the ideal environment to balance your academic pursuits with well-being. From secluded corners to popular campus landmarks, explore study spots that cater to your preferences—whether you need deep focus, collaborative energy, or a place to recharge.</p>
               <p><strong>Here are the types of study spaces:</strong><p></p>
               <ul class="study-intro-list">
-                  <li>Quiet Spaces</li>
-                  <li>Low Noise Spaces</li>
-                  <li>Medium Noise Spaces</li>
-                  <li>High Noise Spaces</li>
+                  <li class="button-item"><a href="#quiet-noise">Quiet Spaces</a></li>
+                  <li class="button-item"><a href="#low-noise">Low Noise Spaces</a></li>
+                  <li class="button-item"><a href="#medium-noise">Medium Noise Spaces</a></li>
+                  <li class="button-item"><a href="#high-noise">High Noise Spaces</a></li>
               </ul>
-            </div>
             </section>
-            <section>
-            <div class="study-intro">
+            <section class="study-intro">
                 <figure>
                 <img src="images/studying.jpg" alt="A student in a grey sweatshirt studies on their laptop in Hatcher Graduate Library reference room." class="studying-image">
                         <figcaption>A student studies in their laptop in Hatcher Graduate Library Reference Room.</figcaption>
                 </figure>
             </section>
             </div>
-
-          <section class="quiet-noise">
-            <div class="quiet-text">
+        <div class="card">
+          <section id="quiet-noise">
             <h2>Quiet Spaces</h2>
             <p>Stay focused and study without distractions.</p>
             <article>
@@ -67,19 +64,14 @@
                 <h3>Michigan Union Basement:</h3>
                 <p> Comfortable seating with minimal interruptions.</p>
             </article>
-            </div>
-            <div>
-            </section>
-            <section class="quiet-noise">
             <figure>
             <img src="images/LawLibrary.jpg" alt="People working at desks in the Law Library Reading Room, with chandeliers and a coffered ceiling." class="quiet-image">
                     <figcaption>Law Library Reading Room at Central Campus</figcaption>
             </figure>
             </div>
         </section>
-        
-        <section class="low-noise">
-        <div class="low-text">
+        <div class="card">
+        <section id="low-noise">
             <h2>Low Noise Spaces</h2>
             <p>Minimize distractions, maximize learning.</p>
             <article>
@@ -98,16 +90,14 @@
                 <h3>East Hall (Psychology Area):</h3>
                 <p> Bright, open spaces, mostly quiet throughout the day.</p>
             </article>
-        </div>
-    </section>
-    <section class="low-noise">
             <figure>
                 <img src="images/Duderstadt.jpg" alt="Modern Duderstadt Center building with a sleek glass facade and distinctive angular architecture." class="low-image">
                         <figcaption>Duderstadt Center at North Campus</figcaption>
                 </figure>
     </section>
-        <section class="medium-noise">
-        <div class="medium-text">
+        </div>
+        <div class="card">
+        <section id="medium-noise">
             <h2>Medium Noise Spaces</h2>
             <p>Find balance between focus and collaboration.</p>
             <article>
@@ -126,17 +116,14 @@
                 <h3>School of Information Lounge:</h3>
                 <p> Casual study space with light conversations.</p>
             </article>
-        </div>
-    </section>
-    <section class="medium-noise">
             <figure>
                 <img src="images/AngellHall.jpg" alt="Neoclassical Greek-style building with large columns and architectural detailing" class="medium-image">
                         <figcaption>Angell Hall at Central Campus</figcaption>
                 </figure>
         </section>
-
-        <section class="high-noise">
-        <div class="high-text">
+    </div>
+    <div class="card">
+        <section id="high-noise">
             <h2>High Noise Spaces</h2>
             <p>Engage, collaborate, and thrive in a dynamic environment.</p>
             <article>
@@ -148,23 +135,34 @@
                 <p>The busiest floor, with conversations and activity. Great for collaborative work or if you don’t mind noise.
                 </p>
             </article>
-        </div>
-       </section>
-       <section class="high-noise">
             <figure>
                 <img src="images/MichiganUnion.jpg" alt="Red and white brick building with the Michigan Union sign" class="high-image">
                         <figcaption>Michigan Union at Central Campus</figcaption>
                 </figure>
         </section>
-        <div class="campus-map">
-            <p>Explore these spaces with ease using this <a href="https://campusinfo.umich.edu/campusmap">interactive</a> campus map, helping you find the perfect spot to match your study needs.</p>
+         </div>
+        <div class="card">
+            <p>
+                Explore these spaces with ease using this interactive campus map below, helping you find the perfect spot to match your study needs.
+              </p>
+            </div>
+              <div id="map-container"> </div>
+              <iframe
+              src="https://maps.studentlife.umich.edu/"
+              width="100%"
+              height="600"
+              style="border:0; border-radius: 8px; margin-top: 1em;"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
         </div>
          <!-- Content taken & modified from ChatGPT with the prompt: "write a description of these places: Quiet Spaces-Hatcher focus spaces/stacks/reference room, Law library reading room, Michigan union basement, Tappan Art History Library; Low Noise Spaces-Duderstadt center, LSA building, School of Education, School of Social Work, East Hall; Medium Noise Spaces-School of Information lounge, Engagement Center, Michigan League, Kinesiology Building, Palmer Commons, UMMA cafe, Pierpont Commons, Fishbowl, Chemistry Building, Dental School, Weiser Hall, Dana Building; High Noise Spaces- Michigan Union, UGLi first floor, Ross building" (2025). ChatGPT (March 23rd, 2023 version) [Large language model]. -->
     </main>
     <footer class="footer-container">
         <div class="footer-one">
             <p>University of Michigan School of Information</p>
-            <p>&copy Copyright 2025 Regents of the University of Michigan</p>
+            <p>© Copyrights <span id="year"></span> Regents of the University of Michigan. All rights reserved.</p>
+            <!-- code taken from Codex world:https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
             </div>
             <div class="footer-two">
             <p> 105 S State Street</p>
@@ -177,5 +175,10 @@
             </ul>
            </div>
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            // code taken from Codex world:https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+            document.getElementById("map-container").appendChild(iframe);
+        </script>
 </body>
 </html>

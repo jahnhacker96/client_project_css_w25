@@ -1,4 +1,5 @@
 
+
 a:focus{
     text-decoration:underline;
     /* Added an underline when in focus for better accessibiity */
@@ -23,12 +24,15 @@ a:focus{
 
 body {
     margin: 0px;
-    font-family: "Nunito Sans", "Montserrat"
+    font-family: "Nunito Sans", "Montserrat";
+    font-size: 16px;
+    line-height: 1.5;
     /* set the default margin and specifies font choices*/
 }
 main {
     margin-left: 20px;
     margin-right: 20px;
+    padding: 20px;
     /* specifies margin choices to create more spacing around the main content */
 }
 
@@ -52,7 +56,7 @@ h2{
 }
 
 .logo{
-    background-image: url("images/UMSI.png");
+    background-image: url("../images/UMSI.png");
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -66,110 +70,244 @@ h2{
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
     width: 100%;
     /* remove the navbar default list styling and added flexbox for even spacing*/
     /* Code modified from Bro Code channel from YouTube*/
 }
 .navbar li{
+    display: flex;
     flex:1;
     text-align: center;
+    padding: 10px;
+    width: 100%;
  /* ensure that the items are evenly distributed and centered along the navigation bar */
  /* Code modified from Bro Code channel from YouTube*/
 }
-.navbar a{
+.navbar li a{
     color: #FFFFFF;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
+    width: 100%;
     /* remove the navbar default list styling with white text and centered the items and added block display*/
     /* Code modified from Bro Code channel from YouTube*/
 }
-.active{
+.navbar li.active{
     background-color: #05529a;
+    font-weight: bold;
     /* change background color of navbar item when active*/
 }
 .footer-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
-    padding: 3px;
+    padding: 20px 30px;
     background-color: #00274C;
     color: #FFFFFF;
+    gap: 1.5rem;
     /* make three column grid that is centered with both background and text colors*/
 }
 
 .footer-links{
     text-decoration: none; /* erase the hyperlink underline */
-    padding: 0;
+    padding: 10px;
     margin:0;
     color:#FFCB05; /* change text color yellow */
 }
 .footer-three-list{
     list-style: none; /* removed the default footer three list styling */
+    padding: 0;
+    margin: 0;
 }
+.button-item {
+    display: inline-block;
+    background-color: #702082;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  .button-item a {
+    text-decoration: none;
+    color: white;
+  }
+  .button-item:hover {
+    background-color: #702082;
+  }
+  .button-item:active {
+    background-color: #9c4ead;
+  }
 .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
-    /* make a two column grid that is centered with spacing*/
+    gap:30px;
+    padding: 40px;
+    margin: auto;
+    /* make a column flexbox display*/
 }
+.card{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.27);
+color:#000;
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-radius: 12px;
+object-fit: cover;
+border: none;
+}
+
 .backpack-image,.resources-image{
     width:100%;
     height:auto;
      /* make images full width while maintaining automatic height*/
 }
-.intro-one,.intro-two{
-    border:solid 2px #2F65A7;
-    /* make intro sections a solid blue border*/
-}
 
-.studying-image,.quiet-image,.low-image, .medium-image, .high-image{
-    width: 100%;
-    height:auto;
-    /* make images full width while maintaining automatic height*/
-}
 .campus-map{
     grid-column:-1/1; /* span all columns */
-}
-.study-intro,.quiet-noise,.low-noise,.medium-noise,.high-noise,.campus-map{
-   border:solid 2px #CFC096;
-    /* make study space sections a solid tan border*/
-}
-
-.wellness-image, .therapydog-image, .sexual-image,.collegiate-image{
-    width:100%;
-    height:auto;
-    /* make images full width while maintaining automatic height*/
-}
-.wolvwell-intro,.wellness-coaching, .pawws-and-relax,.sexual-health-services, .collegiate-recovery-program{
-    border:solid 2px #702082;
- /* make wolverine wellness sections a solid purple border*/
-}
-
-.services-image,.maize-image{
-    width:100%;
-    height:auto;
-    /* make images full width while maintaining automatic height*/
-}
-.maize-mission, .maize-location,.maize-resources{
-    border: solid 2px #75988d;
-     /* make intro sections a solid green border*/
 }
 
 .intro-two-list,.wolvwell-intro-list,.study-intro-list,.maize-resources-list,.maize-location-list{
     list-style: none; /* removed the default list styling across these lists */
 }
+.studying-image,.quiet-image,.low-image, .medium-image, .high-image{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    /* make images full width while maintaining automatic height*/
+ }
+
+ .wellness-image, .therapydog-image, .sexual-image,.collegiate-image{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    /* make images full width while maintaining automatic height*/
+ }
+ .services-image,.maize-image{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    /* make images full width while maintaining automatic height*/
+ }
 
 iframe{
     width: 100%;
     border-width: 0px;
     /* make iframe videos full width and remove the default border*/
+}
+
+@media all and (min-width: 800px) {
+    body {
+        font-size: 18px; /* Increase font size for better readability on larger screens */
+      }
+      main {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 30px;
+        /* Adjust the padding and margins for larger screens */
+      }
+      h1 {
+        font-size: 1.5rem; /* Larger h1 text for better visibility on desktop */
+        margin-bottom: 1rem;
+        grid-column: -1/1;
+      }
+      h2 {
+        font-size: 1.2rem; /* Larger h2 text for better readability on desktop */
+      }
+   /* Ensure .grid-container is using flexbox and allows wrapping */
+    .grid-container {
+    display: flex;
+    flex-direction: row;        /* Arrange items in a row */
+    flex-wrap: wrap;            /* Allow items to wrap to the next row if necessary */
+    justify-content: center;    /* Center items horizontally */
+    gap: 20px;                  /* Add spacing between items */
+    padding: 20px;              /* Padding around the grid container */
+}
+      /* Set specific layout for each card */
+    .card {
+    flex: 1 1 300px;            /* Grow/shrink, with a base size of 300px */
+    display: flex;
+    flex-direction: column;     /* Stack elements inside the card */
+    align-items: center;        /* Center content horizontally */
+    justify-content: center;    /* Center content vertically */
+    margin: 10px;               /* Margin between cards */
+    padding: 20px;              /* Padding inside the card */
+    }
+    /* Add some space between sections inside each card */
+    .intro-one, .intro-two {
+    margin-bottom: 20px;
+    }
+
+    /* Styling for the list inside intro-two section */
+    .intro-two-list {
+    list-style-type: none;
+    padding-left: 0;
+    }
+      /* Make buttons more prominent on desktop */
+      .button-item {
+        padding: 15px 30px; /* Larger buttons on desktop */
+        font-size: 18px; /* Increase font size for better readability */
+      }
+      .studying-image,.quiet-image,.low-image, .medium-image, .high-image{
+        margin: 0 auto; /* Center the images within their container */
+     }
+     .wellness-image, .therapydog-image, .sexual-image,.collegiate-image{
+        margin: 0 auto; /* Center the images within their container */
+     }
+     .services-image,.maize-image{
+        margin: 0 auto; /* Center the images within their container */
+
+     }
+    .navbar ul{
+        list-style-type: none;
+        background-color: #00274C;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* remove the navbar default list styling and added flexbox for even spacing*/
+        /* Code modified from Bro Code channel from YouTube*/
+    }
+    .navbar li{
+        flex:1;
+        text-align: center;
+        padding: 10px;
+     /* ensure that the items are evenly distributed and centered along the navigation bar */
+     /* Code modified from Bro Code channel from YouTube*/
+    }
+    .navbar li.active{
+        background-color: #05529a;
+        font-weight: bold;
+        /* change background color of navbar item when active*/
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem; /* More space between columns */
+        padding: 30px; /* Adjusted padding for a more balanced desktop view */
+        text-align: left; /* Align text to the left in columns */
+    }
 }
