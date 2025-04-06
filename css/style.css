@@ -147,7 +147,7 @@ h2{
   .button-item:active {
     background-color: #9c4ead;
   }
-.grid-container{
+.flex-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,23 +234,13 @@ iframe{
         font-size: 1.2rem; /* Larger h2 text for better readability on desktop */
       }
    /* Ensure .grid-container is using flexbox and allows wrapping */
-    .grid-container {
-    display: flex;
-    flex-direction: row;        /* Arrange items in a row */
-    flex-wrap: wrap;            /* Allow items to wrap to the next row if necessary */
-    justify-content: center;    /* Center items horizontally */
-    gap: 20px;                  /* Add spacing between items */
-    padding: 20px;              /* Padding around the grid container */
-}
-      /* Set specific layout for each card */
-    .card {
-    flex: 1 1 300px;            /* Grow/shrink, with a base size of 300px */
-    display: flex;
-    flex-direction: column;     /* Stack elements inside the card */
-    align-items: center;        /* Center content horizontally */
-    justify-content: center;    /* Center content vertically */
-    margin: 10px;               /* Margin between cards */
-    padding: 20px;              /* Padding inside the card */
+   .flex-container {
+    flex-direction: row;        /* Arrange in a row */
+    justify-content: space-around; /* Distribute items evenly */
+   }
+
+   .card {
+    flex: 1 1 45%;             /* Cards take up 45% of the container width */
     }
     /* Add some space between sections inside each card */
     .intro-one, .intro-two {
