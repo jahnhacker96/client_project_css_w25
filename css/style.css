@@ -291,7 +291,7 @@ iframe{
     .navbar li.active{
         background-color: #05529a;
         font-weight: bold;
-        /* change background color of navbar item when active*/
+        /* change background color of navbar item and bolds the nav item when active*/
     }
     .footer-container {
         display: grid;
